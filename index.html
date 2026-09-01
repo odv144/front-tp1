@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Equipo Nodos — TP1 Desarrollo de Sistemas Web</title>
+<meta name="description" content="Sitio grupal del Equipo Nodos para el TP1 de Desarrollo de Sistemas Web · Front End." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="nav">
+    <a class="brand" href="index.html">
+      <span class="brand-mark">N</span>
+      <span class="brand-text">Equipo Nodos</span>
+    </a>
+    <ul class="nav-links" data-nav-links>
+      <li><a href="index.html" aria-current="page">Inicio</a></li>
+      <li><a href="index.html#equipo">Equipo</a></li>
+      <li><a href="bitacora.html">Bitácora</a></li>
+    </ul>
+    <div class="nav-actions">
+      <button class="theme-toggle" data-theme-toggle type="button" aria-label="Cambiar tema"></button>
+      <button class="nav-toggle-mobile" data-nav-toggle type="button" aria-label="Abrir menú" aria-expanded="false">☰</button>
+    </div>
+  </nav>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="container hero-grid">
+      <div>
+        <span class="eyebrow">TP1 · Desarrollo de Sistemas Web</span>
+        <h1 class="hero-title">Somos <span class="accent-word">Nodos</span>:<br>un equipo, conectado como una red.</h1>
+        <p class="hero-lede">
+          Cinco personas, cinco especialidades y un mismo objetivo: construir interfaces
+          claras, accesibles y bien documentadas. Tocá cualquier nodo del grafo o elegí
+          a alguien de la lista para conocer su perfil.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#equipo">Ver al equipo</a>
+          <a class="btn btn-ghost" href="bitacora.html">Ver la bitácora del proyecto</a>
+        </div>
+      </div>
+
+      <div>
+        <div class="graph-wrap">
+          <svg id="node-graph" aria-hidden="true"></svg>
+          <div class="graph-tooltip" data-graph-tooltip></div>
+        </div>
+        <p class="graph-hint">↳ pasá el mouse o navegá con Tab por los nodos</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="equipo">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">El equipo</span>
+        <h2>Cinco perfiles, un solo repositorio.</h2>
+        <p>Cada tarjeta se genera dinámicamente desde un mismo array de datos: así evitamos repetir información y mantenemos todo consistente entre la portada y cada perfil.</p>
+      </div>
+      <div class="team-grid" id="team-grid"></div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container" style="display:flex; justify-content:space-between; flex-wrap:wrap; gap:10px; width:100%;">
+    <span>Equipo Nodos · TP1 Front End · 2026</span>
+    <span>Hecho con HTML, CSS y JavaScript vanilla</span>
+  </div>
+</footer>
+
+<script src="js/data.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
