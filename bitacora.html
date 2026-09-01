@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Bitácora — Equipo Nodos</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="nav">
+    <a class="brand" href="index.html">
+      <span class="brand-mark">N</span>
+      <span class="brand-text">Equipo Nodos</span>
+    </a>
+    <ul class="nav-links" data-nav-links>
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="index.html#equipo">Equipo</a></li>
+      <li><a href="bitacora.html" aria-current="page">Bitácora</a></li>
+    </ul>
+    <div class="nav-actions">
+      <button class="theme-toggle" data-theme-toggle type="button" aria-label="Cambiar tema"></button>
+      <button class="nav-toggle-mobile" data-nav-toggle type="button" aria-label="Abrir menú" aria-expanded="false">☰</button>
+    </div>
+  </nav>
+</header>
+
+<main>
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Proceso</span>
+        <h2>Bitácora de desarrollo</h2>
+        <p>Decisiones, obstáculos y cambios de rumbo durante el TP1, en orden cronológico. La idea es que se pueda reconstruir cómo trabajamos sin tener que buscar información dispersa en el repositorio.</p>
+      </div>
+
+      <ol class="timeline">
+        <li class="timeline-entry">
+          <div class="timeline-date">Semana 1 · Organización</div>
+          <h3 class="timeline-title">Definimos roles y forma de trabajo</h3>
+          <p class="timeline-body">
+            Leímos la consigna en conjunto y repartimos responsabilidades: maquetado base,
+            estilos y responsive, lógica de JavaScript, y redacción del README. Acordamos
+            usar un canal de chat para avisos rápidos y una reunión semanal corta para
+            destrabar dudas.
+          </p>
+          <div class="timeline-tags"><span class="timeline-tag decision">Decisión</span></div>
+        </li>
+
+        <li class="timeline-entry">
+          <div class="timeline-date">Semana 1 · Arquitectura de datos</div>
+          <h3 class="timeline-title">Un solo array de objetos para todo el equipo</h3>
+          <p class="timeline-body">
+            En vez de escribir el HTML de cada perfil a mano, decidimos centralizar toda la
+            información personal en <code>js/data.js</code>. Esto evitó datos duplicados o
+            desactualizados y nos permitió construir <code>perfil.html</code> como una
+            plantilla única que se completa según el <code>id</code> de la URL.
+          </p>
+          <div class="timeline-tags"><span class="timeline-tag decision">Decisión</span></div>
+        </li>
+
+        <li class="timeline-entry">
+          <div class="timeline-date">Semana 2 · Diseño</div>
+          <h3 class="timeline-title">El grafo de nodos como hilo conductor</h3>
+          <p class="timeline-body">
+            Queríamos que el nombre "Nodos" no fuera solo un logo, sino parte real de la
+            experiencia. Terminamos dibujando el equipo como un grafo interactivo en SVG:
+            cada persona es un nodo conectado a un centro, y tocarlo lleva directo a su
+            perfil. Nos costó calcular las posiciones en círculo con trigonometría, pero
+            quedó reutilizable para cualquier cantidad de integrantes.
+          </p>
+          <div class="timeline-tags"><span class="timeline-tag decision">Decisión</span></div>
+        </li>
+
+        <li class="timeline-entry">
+          <div class="timeline-date">Semana 2 · Problema</div>
+          <h3 class="timeline-title">Los breakpoints rompían el grafo en mobile</h3>
+          <p class="timeline-body">
+            Al achicar la ventana a 400px, el SVG del grafo se deformaba y los textos de los
+            nodos se superponían. Lo resolvimos usando <code>viewBox</code> con unidades
+            relativas en vez de tamaños fijos en píxeles, y reduciendo el radio del grafo con
+            media queries específicas en 900px y 400px.
+          </p>
+          <div class="timeline-tags"><span class="timeline-tag problema">Problema</span></div>
+        </li>
+
+        <li class="timeline-entry">
+          <div class="timeline-date">Semana 3 · Cambio</div>
+          <h3 class="timeline-title">De fotos personales a avatares con iniciales</h3>
+          <p class="timeline-body">
+            Al principio íbamos a usar fotos propias, pero para esta primera entrega
+            preferimos generar avatares con las iniciales de cada integrante y un color
+            distintivo tomado también del array de datos. Es más consistente visualmente y
+            evita depender de imágenes pesadas.
+          </p>
+          <div class="timeline-tags"><span class="timeline-tag cambio">Cambio</span></div>
+        </li>
+
+        <li class="timeline-entry">
+          <div class="timeline-date">Semana 3 · Accesibilidad</div>
+          <h3 class="timeline-title">El grafo tenía que funcionar también con teclado</h3>
+          <p class="timeline-body">
+            Nos dimos cuenta de que los nodos del SVG no eran alcanzables con Tab. Agregamos
+            <code>tabindex</code>, roles ARIA y estados de foco visibles, y probamos toda la
+            navegación sin mouse antes de dar la portada por terminada.
+          </p>
+          <div class="timeline-tags"><span class="timeline-tag problema">Problema</span><span class="timeline-tag cambio">Cambio</span></div>
+        </li>
+
+        <li class="timeline-entry">
+          <div class="timeline-date">Semana 4 · Cierre</div>
+          <h3 class="timeline-title">Revisión final y publicación</h3>
+          <p class="timeline-body">
+            Revisamos los tres breakpoints obligatorios en dispositivos reales, completamos
+            el README con capturas y la explicación de cada función de JavaScript, y
+            publicamos el sitio en Vercel antes de cargar el enlace del repositorio en la
+            planilla única de entregas.
+          </p>
+          <div class="timeline-tags"><span class="timeline-tag decision">Decisión</span></div>
+        </li>
+      </ol>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container" style="display:flex; justify-content:space-between; flex-wrap:wrap; gap:10px; width:100%;">
+    <span>Equipo Nodos · TP1 Front End · 2026</span>
+    <a href="index.html">← Volver a la portada</a>
+  </div>
+</footer>
+
+<script src="js/data.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
