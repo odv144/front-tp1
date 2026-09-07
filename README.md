@@ -5,8 +5,8 @@ Web · Front End** (2do cuatrimestre 2026). El equipo se llama **Nodos**: la ide
 cada integrante es un nodo conectado a una misma red, y esa metáfora se ve reflejada en
 el grafo interactivo de la portada.
 
-🔗 **Sitio publicado (Vercel):** `<COMPLETAR con la URL real al publicar>`
-📁 **Repositorio:** `<COMPLETAR con la URL del repo público>`
+🔗 **Sitio publicado (Vercel):** https://front-tp1.vercel.app/
+📁 **Repositorio:** [Repositorio](https://github.com/odv144/front-tp1)
 
 ---
 
@@ -16,7 +16,7 @@ el grafo interactivo de la portada.
 
 | Nombre | GitHub |
 |---|---|
-| Valentina Ríos | https://github.com/valentina-rios-dev |
+| Omar Dario Virili | https://github.com/odv144 |
 | Bruno Aguirre | https://github.com/bruno-aguirre-dev |
 | Milagros Cabrera | https://github.com/mili-cabrera |
 | Tomás Ledesma | https://github.com/tomas-ledesma-qa |
