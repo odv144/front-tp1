@@ -3,8 +3,6 @@
  * Fuente única de verdad para la información de las personas integrantes del equipo.
  * Todas las páginas (portada, perfiles) leen de este array. No hay datos
  * personales "hardcodeados" en el HTML: todo se renderiza desde acá vía JS.
- *
- * NOTA: la información es ficticia, generada para cumplir con la consigna del TP1.
  */
 
 const TEAM = [
@@ -15,10 +13,9 @@ const TEAM = [
     city: "Villa Ocampo, Santa Fe",
     age: 42,
     github: "https://github.com/odv144",
-    initials: "VR",
-    fotoPerfil: "https://avatars.githubusercontent.com/u/12345678?v=4",
+    initials: "OV",
     accent: "#2B2F77",
-    bio: "Apacionado por la electrónica y el desarrollo web, fasinado por la robótica y la Inteligencia Artificial.",
+    bio: "Apasionado por la electrónica y el desarrollo web, fascinado por la robótica y la Inteligencia Artificial.",
     skills: [
       { name: "HTML5 & CSS3", level: 92 },
       { name: "Java", level: 50 },
@@ -27,36 +24,35 @@ const TEAM = [
       { name: "Python", level: 60 },
     ],
     movies: ["Matrix", "Ex Machina", "Una Mente Brillante"],
-    albums: ["La Esquina del Infinito — La Renga", "Signos — Soda Stereo", "Say no more — Charly Gracía"],
+    albums: ["La Esquina del Infinito — La Renga", "Signos — Soda Stereo", "Say no more — Charly García"],
     funFacts: [
       "De técnico en electrónica a programador: cambié los cables sueltos por bugs sueltos.",
       "Técnico en electrónica de día, programador de noche, fan del rock nacional las 24 horas.",
-      "Soldé placas antes de soldar código, y a los dos les seguí sacando chispas",
+      "Soldé placas antes de soldar código, y a los dos le seguí sacando chispas.",
     ],
   },
   {
     id: 2,
-    name: "Bruno Aguirre",
-    role: "Backend Developer",
-    city: "Córdoba, Córdoba",
-    age: 25,
-    github: "https://github.com/bruno-aguirre-dev",
-    initials: "BA",
-    fotoPerfil: "https://avatars.githubusercontent.com/u/12345678?v=4",
-    accent: "#1C6E5E",
-    bio: "Diseña APIs pensando en quien las va a odiar a las 3am de un incidente: la persona del futuro que es él mismo.",
+    name: "Cristian Suárez",
+    role: "Fullstack Developer",
+    city: "CABA, Buenos Aires",
+    age: 35,
+    github: "https://github.com/c-suarez",
+    initials: "CS",
+    accent: "#E53935",
+    bio: "Desarrollador Fullstack apasionado por crear soluciones eficientes. Disfruto de los buenos desafíos técnicos.",
     skills: [
-      { name: "Node.js", level: 88 },
-      { name: "Bases de datos SQL", level: 82 },
-      { name: "APIs REST", level: 85 },
-      { name: "Docker", level: 60 },
+      { name: "HTML & CSS", level: 90 },
+      { name: "JavaScript", level: 85 },
+      { name: "Node.js", level: 75 },
+      { name: "React", level: 80 },
     ],
-    movies: ["Interestelar", "Sr. Robot (serie)", "WarGames"],
-    albums: ["The Dark Side of the Moon — Pink Floyd", "In Rainbows — Radiohead", "Bahía — Louta"],
+    movies: ["Goodfellas", "Reservoir Dogs", "Taxi Driver"],
+    albums: ["Continuum — John Mayer", "Audioslave — Audioslave", "Appetite for Destruction — Guns N' Roses"],
     funFacts: [
-      "Nombra todas sus variables en inglés, hasta las de la lista del súper.",
-      "Tiene un mate con logo de terminal de Linux.",
-      "Una vez debuggeó un error durante 6 horas: era un punto y coma.",
+      "Melómano, no puedo programar sin música.",
+      "Siempre me gustó la informática, pero me metí de grande a programar.",
+      "Toco y enseño guitarra en mis ratos libres.",
     ],
   },
   {
@@ -67,7 +63,6 @@ const TEAM = [
     age: 21,
     github: "https://github.com/mili-cabrera",
     initials: "MC",
-    fotoPerfil: "https://avatars.githubusercontent.com/u/12345678?v=4",
     accent: "#B24C1F",
     bio: "Cree que un buen diseño es el que nadie nota, porque todo funciona como uno espera. Fan de las paletas de 4 colores, ni uno más.",
     skills: [
@@ -92,7 +87,6 @@ const TEAM = [
     age: 27,
     github: "https://github.com/tomas-ledesma-qa",
     initials: "TL",
-    fotoPerfil: "https://avatars.githubusercontent.com/u/12345678?v=4",
     accent: "#6B3FA0",
     bio: "Su deporte favorito es encontrarle la vuelta a un formulario hasta que explote. Si algo se puede romper, él ya lo rompió.",
     skills: [
@@ -107,31 +101,6 @@ const TEAM = [
       "Encuentra el bug crítico cinco minutos antes del deploy, siempre.",
       "Tiene una lista de 'formas raras de romper un input' con más de 50 ítems.",
       "Su frase favorita es 'en mi máquina funciona' (para reírse de ella).",
-    ],
-  },
-  {
-    id: 5,
-    name: "Sofía Benítez",
-    role: "Fullstack Developer",
-    city: "Santa Fe, Santa Fe",
-    age: 23,
-    github: "https://github.com/sofia-benitez-dev",
-    initials: "SB",
-    fotoPerfil: "https://avatars.githubusercontent.com/u/12345678?v=4",
-    accent: "#1E7A8C",
-    bio: "La que conecta todos los cables: si el front no le habla al back, ella arma el puente. Le gusta entender el sistema completo.",
-    skills: [
-      { name: "JavaScript", level: 85 },
-      { name: "Node.js", level: 72 },
-      { name: "Git avanzado", level: 80 },
-      { name: "Metodologías ágiles", level: 76 },
-    ],
-    movies: ["Whiplash", "El juego de la imitación", "Steve Jobs"],
-    albums: ["Norman F***ing Rockwell — Lana del Rey", "Vida — Nathy Peluso", "Random Access Memories — Daft Punk"],
-    funFacts: [
-      "Resuelve conflictos de merge con la misma calma que resuelve conflictos de equipo.",
-      "Tiene un board de Trello para organizar sus otros boards de Trello.",
-      "Aprendió a programar para automatizar una planilla de horarios del profesorado.",
     ],
   },
 ];
