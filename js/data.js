@@ -10,26 +10,28 @@
 const TEAM = [
   {
     id: 1,
-    name: "Valentina Ríos",
-    role: "Frontend Developer",
-    city: "Rosario, Santa Fe",
-    age: 22,
-    github: "https://github.com/valentina-rios-dev",
+    name: "Omar Dario Virili",
+    role: "Técnico superior en electrónica",
+    city: "Villa Ocampo, Santa Fe",
+    age: 42,
+    github: "https://github.com/odv144",
     initials: "VR",
+    fotoPerfil: "https://avatars.githubusercontent.com/u/12345678?v=4",
     accent: "#2B2F77",
-    bio: "Convierte bocetos de Figma en interfaces que no se rompen ni a los 320px. Obsesionada con el detalle de un hover bien hecho.",
+    bio: "Apacionado por la electrónica y el desarrollo web, fasinado por la robótica y la Inteligencia Artificial.",
     skills: [
       { name: "HTML5 & CSS3", level: 92 },
-      { name: "JavaScript", level: 80 },
+      { name: "Java", level: 50 },
       { name: "React", level: 70 },
-      { name: "Accesibilidad Web", level: 65 },
+      { name: "Node.js", level: 65 },
+      { name: "Python", level: 60 },
     ],
-    movies: ["Matrix", "Ex Machina", "Her"],
-    albums: ["Discovery — Daft Punk", "OK Computer — Radiohead", "Currents — Tame Impala"],
+    movies: ["Matrix", "Ex Machina", "Una Mente Brillante"],
+    albums: ["La Esquina del Infinito — La Renga", "Signos — Soda Stereo", "Say no more — Charly Gracía"],
     funFacts: [
-      "Tiene 34 pestañas abiertas del mismo proyecto de CSS.",
-      "Su primer 'Hola Mundo' lo escribió en una calculadora científica.",
-      "Puede distinguir Helvetica de Arial a diez metros de distancia.",
+      "De técnico en electrónica a programador: cambié los cables sueltos por bugs sueltos.",
+      "Técnico en electrónica de día, programador de noche, fan del rock nacional las 24 horas.",
+      "Soldé placas antes de soldar código, y a los dos les seguí sacando chispas",
     ],
   },
   {
@@ -40,6 +42,7 @@ const TEAM = [
     age: 25,
     github: "https://github.com/bruno-aguirre-dev",
     initials: "BA",
+    fotoPerfil: "https://avatars.githubusercontent.com/u/12345678?v=4",
     accent: "#1C6E5E",
     bio: "Diseña APIs pensando en quien las va a odiar a las 3am de un incidente: la persona del futuro que es él mismo.",
     skills: [
@@ -64,6 +67,7 @@ const TEAM = [
     age: 21,
     github: "https://github.com/mili-cabrera",
     initials: "MC",
+    fotoPerfil: "https://avatars.githubusercontent.com/u/12345678?v=4",
     accent: "#B24C1F",
     bio: "Cree que un buen diseño es el que nadie nota, porque todo funciona como uno espera. Fan de las paletas de 4 colores, ni uno más.",
     skills: [
@@ -88,6 +92,7 @@ const TEAM = [
     age: 27,
     github: "https://github.com/tomas-ledesma-qa",
     initials: "TL",
+    fotoPerfil: "https://avatars.githubusercontent.com/u/12345678?v=4",
     accent: "#6B3FA0",
     bio: "Su deporte favorito es encontrarle la vuelta a un formulario hasta que explote. Si algo se puede romper, él ya lo rompió.",
     skills: [
@@ -112,6 +117,7 @@ const TEAM = [
     age: 23,
     github: "https://github.com/sofia-benitez-dev",
     initials: "SB",
+    fotoPerfil: "https://avatars.githubusercontent.com/u/12345678?v=4",
     accent: "#1E7A8C",
     bio: "La que conecta todos los cables: si el front no le habla al back, ella arma el puente. Le gusta entender el sistema completo.",
     skills: [
