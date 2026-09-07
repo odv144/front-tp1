@@ -7,8 +7,10 @@
 /* ---------- Tema claro / oscuro ---------- */
 (function initTheme() {
   const root = document.documentElement;
+  const savedTheme = localStorage.getItem("theme");
   const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
-  root.setAttribute("data-theme", prefersDark ? "dark" : "light");
+  const initialTheme = savedTheme || (prefersDark ? "dark" : "light");
+  root.setAttribute("data-theme", initialTheme);
 
   document.addEventListener("DOMContentLoaded", () => {
     const toggle = document.querySelector("[data-theme-toggle]");
@@ -16,8 +18,10 @@
     updateToggleIcon(toggle, root.getAttribute("data-theme"));
 
     toggle.addEventListener("click", () => {
-      const next = root.getAttribute("data-theme") === "dark" ? "light" : "dark";
+      const current = root.getAttribute("data-theme");
+      const next = current === "dark" ? "light" : "dark";
       root.setAttribute("data-theme", next);
+      localStorage.setItem("theme", next);
       updateToggleIcon(toggle, next);
     });
   });
