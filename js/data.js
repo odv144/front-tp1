@@ -15,7 +15,8 @@ const TEAM = [
     github: "https://github.com/odv144",
     initials: "OV",
     accent: "#2B2F77",
-    bio: "Apasionado por la electrónica y el desarrollo web, fascinado por la robótica y la Inteligencia Artificial.",
+    fotoPerfil: "https://avatars.githubusercontent.com/u/12345678?v=4",
+    bio: "Apacionado por la electrónica y el desarrollo web, fasinado por la robótica y la Inteligencia Artificial.",
     skills: [
       { name: "HTML5 & CSS3", level: 92 },
       { name: "Java", level: 50 },
@@ -63,6 +64,7 @@ const TEAM = [
     age: 21,
     github: "https://github.com/mili-cabrera",
     initials: "MC",
+    fotoPerfil: "https://avatars.githubusercontent.com/u/12345678?v=4",
     accent: "#B24C1F",
     bio: "Cree que un buen diseño es el que nadie nota, porque todo funciona como uno espera. Fan de las paletas de 4 colores, ni uno más.",
     skills: [
@@ -87,6 +89,7 @@ const TEAM = [
     age: 27,
     github: "https://github.com/tomas-ledesma-qa",
     initials: "TL",
+    fotoPerfil: "https://avatars.githubusercontent.com/u/12345678?v=4",
     accent: "#6B3FA0",
     bio: "Su deporte favorito es encontrarle la vuelta a un formulario hasta que explote. Si algo se puede romper, él ya lo rompió.",
     skills: [
