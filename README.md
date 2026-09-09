@@ -12,14 +12,15 @@ el grafo interactivo de la portada.
 
 ## Integrantes
 
-> Reemplazar por los perfiles de GitHub reales del equipo antes de la entrega.
+/> Reemplazar por los perfiles de GitHub reales del equipo antes de la entrega.
 
 | Nombre | GitHub |
 |---|---|
 | Omar Dario Virili | https://github.com/odv144 |
 | Cristian Suárez | https://github.com/c-suarez |
 | Milagros Cabrera | https://github.com/mili-cabrera |
-| Tomás Ledesma | https://github.com/tomas-ledesma-qa |
+| Cynthia Sotelo | https://github.com/cynthia-sotelo |
+| Sofía Benítez | https://github.com/sofia-benitez-dev |
 
 ---
 
