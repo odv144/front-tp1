@@ -17,7 +17,7 @@ el grafo interactivo de la portada.
 | Nombre | GitHub |
 |---|---|
 | Omar Dario Virili | https://github.com/odv144 |
-| Bruno Aguirre | https://github.com/bruno-aguirre-dev |
+| Cristian Suárez | https://github.com/c-suarez |
 | Milagros Cabrera | https://github.com/mili-cabrera |
 | Cynthia Sotelo | https://github.com/cynthia-sotelo |
 | Sofía Benítez | https://github.com/sofia-benitez-dev |

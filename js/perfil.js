@@ -60,7 +60,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         <div class="factcard">
           <p class="eyebrow">Dato curioso</p>
-          <p id="fact-text" style="margin-top:8px;">${member.funFacts[0]}</p>
+          <p id="fact-text" aria-live="polite" style="margin-top:8px;">${member.funFacts[0]}</p>
           <button class="btn btn-ghost" id="fact-btn" type="button">🔀 Otro dato</button>
         </div>
       </div>
