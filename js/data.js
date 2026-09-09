@@ -95,7 +95,7 @@ const TEAM = [
     bio: "Especialista en QA & Testing. Pongo a prueba el código para garantizar un software estable y confiable.",
     skills: [
       { name: "Cypress & Selenium", level: 85 },
-      { name: ""APIs (Postman & Swagger)", level: 88 },
+      { name: "APIs (Postman & Swagger)", level: 88 },
       { name: "Gestión de Bugs (Jira)", level: 90 },
       { name: "SQL & Bases de Datos", level: 75 },
     ],
