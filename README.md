@@ -18,7 +18,7 @@ el grafo interactivo de la portada.
 |---|---|
 | Omar Dario Virili | https://github.com/odv144 |
 | Bruno Aguirre | https://github.com/bruno-aguirre-dev |
-| Milagros Cabrera | https://github.com/mili-cabrera |
+| Jairo Calla | https://github.com/JNCallaGiron |
 | Tomás Ledesma | https://github.com/tomas-ledesma-qa |
 | Sofía Benítez | https://github.com/sofia-benitez-dev |
 
