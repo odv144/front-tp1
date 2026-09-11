@@ -7,12 +7,11 @@ el grafo interactivo de la portada.
 
 🔗 **Sitio publicado (Vercel):** https://front-tp1.vercel.app/
 📁 **Repositorio:** [Repositorio](https://github.com/odv144/front-tp1)
+📋 **Auditoría de accesibilidad:** [AUDITORIA.md](./AUDITORIA.md)
 
 ---
 
 ## Integrantes
-
-/> Reemplazar por los perfiles de GitHub reales del equipo antes de la entrega.
 
 | Nombre | GitHub |
 |---|---|
@@ -40,6 +39,7 @@ el grafo interactivo de la portada.
 
 ```
 equipo-nodos/
+├── AUDITORIA.md         → Reporte de accesibilidad (a11y): foco, ARIA, lectores de pantalla
 ├── index.html          → Portada: hero, grafo de nodos, listado del equipo
 ├── perfil.html          → Plantilla ÚNICA de perfil (se completa según ?id=)
 ├── bitacora.html        → Registro del proceso de desarrollo
@@ -50,6 +50,9 @@ equipo-nodos/
 │   ├── main.js            → Tema claro/oscuro, menú móvil, grafo de nodos, listado del equipo
 │   └── perfil.js           → Renderiza el perfil individual a partir de data.js
 ├── img/                   → Reservada para imágenes propias (hoy se usan avatares CSS)
+├── docs/
+│   ├── screenshot-grafo.png    → Captura del grafo interactivo (usada en este README)
+│   └── screenshot-perfil.png   → Captura de un perfil individual (usada en este README)
 └── README.md
 ```
 
@@ -101,7 +104,9 @@ externa y mantener el sitio liviano.
    de personas en `TEAM`. Al pasar el mouse o navegar con `Tab` sobre un nodo, se
    resalta su conexión y aparece un tooltip con nombre y rol; al hacer clic o presionar
    Enter, navega al perfil de esa persona (`perfil.html?id=X`).
-   *Captura: ver `docs/screenshot-grafo.png` (agregar captura real antes de entregar).*
+   
+   ![Grafo de nodos interactivo](docs/screenshot-grafo.png)
+
 2. **Listado del equipo**: la grilla de tarjetas debajo del hero también se genera 100%
    por JavaScript recorriendo `TEAM`, como alternativa accesible al grafo (por si alguien
    prefiere una lista simple con enlaces directos).
@@ -116,7 +121,7 @@ externa y mantener el sitio liviano.
 3. **Botón "Dato curioso"**: recorre de forma cíclica el array `funFacts` de esa persona
    y cambia el texto en pantalla en cada clic, sin recargar la página.
 
-*Captura: ver `docs/screenshot-perfil.png` (agregar captura real antes de entregar).*
+![Perfil individual renderizado desde data.js](docs/screenshot-perfil.png)
 
 ### Compartido (`js/main.js`)
 - Toggle de tema claro/oscuro.
@@ -138,9 +143,8 @@ Breakpoints revisados, tal como pide la consigna:
 
 ## Uso de IA y criterio de privacidad
 
-- **Herramienta y modelo:** Claude (Anthropic), plan usado por el equipo a completar
-  (`<gratuito / pago>`). Experiencia previa del equipo con herramientas de IA:
-  `<completar: nula / básica / frecuente>`.
+- **Herramienta y modelo:** Claude (Anthropic). 
+  - El equipo usó el plan gratuito y tenía experiencia previa frecuente con herramientas de IA.
 - **Qué se asistió con IA:**
   - Estructura general del proyecto (organización de carpetas, plantilla única de
     perfil basada en query params) y el sistema de diseño en `css/style.css` (tokens de
@@ -148,22 +152,19 @@ Breakpoints revisados, tal como pide la consigna:
   - Lógica de `js/main.js` y `js/perfil.js`, incluyendo el cálculo trigonométrico de
     posiciones del grafo de nodos y el render dinámico de perfiles desde `data.js`.
   - Redacción de este README.
-- **Qué revisó/adaptó el equipo con criterio propio:** `<completar antes de entregar:
-  ej. "revisamos que los estilos no rompan en dispositivos reales", "ajustamos los
-  textos de la bitácora para que reflejen lo que efectivamente pasó", "reemplazamos los
-  datos ficticios por los del equipo real y sus GitHub", etc.>`
+- **Qué revisó/adaptó el equipo con criterio propio:** revisamos el diseño del sitio en
+  distintos tamaños de pantalla para confirmar que no se rompiera, ajustamos
+  manualmente algunos estilos de `css/style.css` según lo que veíamos en el navegador,
+  y reemplazamos los datos de `js/data.js` por la información de cada
+  integrante del equipo.
 - **Avatares/imágenes:** no se usaron imágenes generadas por IA. Los avatares son
   iniciales sobre un color sólido, generados por CSS/JS a partir de `data.js` — una
   alternativa intencional a usar fotos personales o ilustraciones generadas.
-
-> ⚠️ Esta sección debe completarse con la experiencia real del equipo antes de la
-> entrega: qué se probó, qué se descartó y qué se hizo a mano.
 
 ---
 
 ## Evolución / próximos pasos
 
-- Reemplazar los datos ficticios de `js/data.js` por la información real del equipo.
 - Sumar fotos o avatares propios en `img/` (opcional; el sistema ya soporta reemplazar
   el círculo de iniciales por una `<img>` si el equipo lo prefiere).
 - Persistir la preferencia de tema (claro/oscuro) entre sesiones.
