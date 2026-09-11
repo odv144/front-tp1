@@ -132,3 +132,4 @@ const TEAM = [
       "Mi playlist de trabajo va de Sinatra a Michael Jackson: documentación con swing.",
     ],
   },
+]
